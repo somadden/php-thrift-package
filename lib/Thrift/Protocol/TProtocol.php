@@ -37,6 +37,9 @@ abstract class TProtocol
    */
   protected $trans_;
 
+  /** Namespace issue fix - https://issues.apache.org/jira/browse/THRIFT-1903 */
+  static $TBINARYPROTOCOLACCELERATED = '\Thrift\Protocol\TBinaryProtocolAccelerated';
+
   /**
    * Constructor
    */
